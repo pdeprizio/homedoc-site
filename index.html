@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeDoc Restoration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <h1>HomeDoc Restoration</h1>
-    <h3>Water Damage Fire Damage Smoke Damage</h3>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src= "images/logoblack.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Why Us?</a></li>
+                <li><a href="">Contact</a></li>
+                
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"id="bars"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Water Fire Mold Restoration</h1>
+      <p>HomeDoc Restoration provides Long Island, NY with immediate responses, 
+        24/7 free assessments,<br> and a team of IICRC certified professionals. 
+        Call us today! </p>
+        <a href="tel:5165843158" class="call-btn">Call Now</a>
+
+    </div>
+
+</section>
+
+<!--Services section-->
+<section class="services">
+    <h1>Our Services</h1>
+    <p>Long Island, NY
+    </p>
+    <div class="row">
+        <div class="services-col">
+            <h3>Water Damage</h3>
+            <p>Whether it's your home or your business, HomeDoc's certified professionals have the experience
+                 and know how to deal with any type of water damage you encounter. Our responsive technicians
+                 work fast to ensure no further damage occurs, using top of the line equipment and cleaning 
+                 methods to get you or your business back on track.</p>
+        </div>
+        <div class="services-col">
+            <h3>Fire Damage</h3>
+            <p>We understand a fire can be devastating for anyone. It is important to acknowledge that each 
+                fire loss is unique and the cleaning approach should also be unique. Improper cleaning
+                techniques could lead to more severe damage. At HomeDoc we are IICRC trained and certified to
+                provide the highest quality smoke/fire cleaning service. Don't leave it up to chance, leave it 
+                up to HomeDoc.</p>
+        </div>
+        <div class="services-col">
+            <h3>Smoke Damage</h3>
+            <p>Whether it's your home or your business, HomeDoc's certified professionals have the experience
+                 and know how to deal with any type of water damage you encounter. Our responsive technicians
+                 work fast to ensure no further damage occurs, using top of the line equipment and cleaning 
+                 methods to get you or your business back on track.</p>
+        </div>
+        <div class="services-col">
+            <h3>Sewage Cleanup</h3>
+            <p>Whether it's your home or your business, HomeDoc's certified professionals have the experience
+                 and know how to deal with any type of water damage you encounter. Our responsive technicians
+                 work fast to ensure no further damage occurs, using top of the line equipment and cleaning 
+                 methods to get you or your business back on track.</p>
+        </div>
+        <div class="services-col">
+            <h3>Mold Remediation</h3>
+            <p>Whether it's your home or your business, HomeDoc's certified professionals have the experience
+                 and know how to deal with any type of water damage you encounter. Our responsive technicians
+                 work fast to ensure no further damage occurs, using top of the line equipment and cleaning 
+                 methods to get you or your business back on track.</p>
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+
+<!-----Javascript for toggle menu-------->
+
+<script>
+    var navLinks= document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right= "0";}
+    function hideMenu(){
+        navLinks.style.right= "-200px";}
+</script>
+
 </body>
-</html>
+</html> 
