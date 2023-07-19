@@ -147,7 +147,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 30px;
 
 }
 
@@ -161,4 +161,42 @@ p{font-size: 14px;
     line-height: 22px;
     padding: 10px;
 
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.services-col{
+    flex-basis: 30%;
+    background: transparent;
+    border: 1px solid rgb(127, 127, 127);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.services-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .services-col {
+        margin-bottom: 20px; /* Adjust the spacing as needed */
+      }
+    
 }
