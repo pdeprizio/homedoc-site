@@ -9,8 +9,11 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <script src="https://kit.fontawesome.com/0f36a17dc2.js" crossorigin="anonymous"></script>
+   <script src="practice.js" type="module" defer></script>
 </head>
 <body>
+<div class="scroll-tracker"></div>
 <section class="header" id="home">
      <nav class="navbar">
         <a href="index.html"><img src= "images/logoblack.png"></a>
@@ -93,6 +96,70 @@
 
 </section>
 
+<!--PHOTO SLIDER-->
+
+<section class="slider">
+
+<div id="slider">
+    <ul id="slideWrap"> 
+      <li><img src="images/1.jpg" alt=""></li>
+      <li><img src="images/2.jpg" alt=""></li>
+      <li><img src="images/3.jpg" alt=""></li>
+      <li><img src="images/4.jpg" alt=""></li>
+     
+    </ul>
+    <a id="prev" href="#">&#8810;</a>
+    <a id="next" href="#">&#8811;</a>
+  </div>
+
+</section>
+
+<!--Before and After's-->
+
+<section>
+    <div class="container">
+        <div class="image-container">
+            <img class="image-before" src="images/b1.jpg">
+            <img class="image-after" src="images/a1.jpg">
+        </div>
+        <input type="range" min="0" max="100" value="50" 
+        class="slider" aria-label="Percentage of before photo shown"/>
+        <div class="slider-line"></div>
+        <div class="slider-button" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg>
+        </div>
+
+    </div>
+     
+</section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--Why Us? Section-->
 
 <section class="whyus" id="whyus">
@@ -172,7 +239,39 @@
     </div>
     
 </section>
-<script src="practice.js"></script>
+
+<!-----Footer-------->
+
+<section>
+    <footer>
+    
+        <div class="footer-content">
+            <img src="images/logoblack.png">
+            <p>Serving Nassau & Suffolk County, NY</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/homedocrestoration/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100088076222462"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://goo.gl/maps/XY1aQkzojohDSwRN7"><i class="fa-brands fa-google"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="certified">
+            <img src="images/iicrc.jpg" id="iicrc">
+            <img src="images/osha.png" id="osha">
+        </div>
+       
+    
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 HomeDoc Corp. Made with <i class="fa-solid fa-heart"></i> by paigedeprizio<p/p>
+             
+        </div>
+    </footer>
+ 
+
+
+</section>
+
+
 
 </body>
 </html> 
