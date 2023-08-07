@@ -323,8 +323,9 @@ img-comparison-slider {
 
   @media (max-width: 768px) {
     .bna{
-        height: 200vh;
+        height: 70%;
         margin-top: 10px;
+        
         
     }
     .bna-content {
