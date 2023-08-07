@@ -222,77 +222,125 @@ h3{
 
 
 @media(max-width: 700px){
+    .services{
+        margin-bottom: 20px;
+        
+    }
     .row{
         flex-direction: column;
     }
     .services-col {
-        margin-bottom: 20px; 
+        margin-bottom: 15px; 
       }
     
-}
-/*--Photo Slider--*/
-
-.slider{
-    margin-top: 20px;
-}
-
-#slider {
     
-    margin: auto;
-    position: relative;
-    width: 500px;
-    height: 315px;
-   
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.008);
-  }
-  #slider ul {
-    position: relative;
-    list-style: none;
-    height: 100%;
-    width: 10000%;
-    padding: 0;
-    margin: 0;
-    transition: all 250ms ease;
-    left: 0;
-  }
-  #slider ul li {
-    position: relative;
-    height: 100%;
-   
-    float: left;
-  }
-  #slider ul li img{
-    width: 500px;
-    height: 315px;
-  }
-   
+}
+
  
  /*--Before and Afters--*/
 
- 
 
+.bna{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+  
+}
+.bna-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; 
+    text-align: center;
+    
+    
+}
+.bna h1{
+    margin-top: 0;
+    padding-bottom: 50px;
+    color: white;
+}
+.sliders-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    
+    margin-bottom: 30px;
+}
 
+.img-slider {
+    /* Set the desired width and height for the slider container */
+    width: 300px; /* Adjust this value as needed */
+    height: 400px; /* Adjust this value as needed */
+  }
+  
+img-comparison-slider {
+    /* Set the desired width and height for the slider itself */
+    width: 100%;
+    height: 100%;
+    --divider-width: 2px;
+    --divider-color: #c0c0c0;
+    --default-handle-opacity: 0.3;
+  }
+  
+  img[slot="first"],
+  img[slot="second"] {
+    
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
 
-
-
-
-
-
-
+  @media (max-width: 768px) {
+    .bna{
+        height: 250vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .bna-content {
+      padding: 30px; /* Reduce the padding for better use of space on mobile view */
+    }
+    .bna h1{
+        margin-top: 10px;
+    }
+    .sliders-container {
+      display: block; /* Display sliders vertically on mobile view */
+      margin-bottom: 10px;
+    }
+  
+    .img-slider {
+      width: 100%; /* Make each slider take the full width of the screen */
+      height: auto; /* Adjust the height automatically based on the image aspect ratio */
+      max-width: 400px; /* Set a maximum width to avoid overly large sliders */
+      margin: 0 auto 20px; /* Center the sliders horizontally and add some spacing between them */
+      
+    }
+    img-comparison-slider{
+        margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  
+  
+  
 /*--Why us?--*/
 
 .whyus{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 .whyus-col{
     flex-basis: 32%;
     border-radius: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: 30px;
     position: relative;
@@ -307,6 +355,17 @@ h3{
 
 .whyus-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .whyus{
+        margin-top: 100px;
+        padding-top: 10px;
+    }
+
+    .whyus-col{
+        margin-top: 30px;
+    }
 }
 
 /*--Contact Us Form--*/
@@ -433,4 +492,7 @@ line-height: 3rem;
     color: #0033eb;
 }
  
+@media (max-width: 768px) {
+
+}
  

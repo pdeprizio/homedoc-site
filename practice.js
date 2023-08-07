@@ -1,3 +1,5 @@
+
+
 import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"  
 
 const scrollTracker = document.querySelector(".scroll-tracker");
@@ -18,15 +20,10 @@ scrollTracker.animate(
     }
 )
  
-  
-
-
-
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
 
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('show');
 });
-
 

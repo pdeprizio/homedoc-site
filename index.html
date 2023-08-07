@@ -11,6 +11,9 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <script src="https://kit.fontawesome.com/0f36a17dc2.js" crossorigin="anonymous"></script>
    <script src="practice.js" type="module" defer></script>
+   <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
+   
 </head>
 <body>
 <div class="scroll-tracker"></div>
@@ -95,11 +98,38 @@
     </div>
 
 </section>
-
+ 
 
 <!--Before and After's-->
 
 
+
+<div class="bna">
+    <div class="bna-content">
+    <h1>View Our Work</h1>
+    <div class="sliders-container">
+    <div class="img-slider">
+        <img-comparison-slider class="slider">
+      <img slot="first" src="b1.jpg" />
+      <img slot="second" src="a1.png" />
+    </img-comparison-slider>
+    </div>
+    <div class="img-slider">
+        <img-comparison-slider class="slider">
+      <img slot="first" src="b2.jpg" />
+      <img slot="second" src="a2.jpg" />
+    </img-comparison-slider>
+    </div>
+    <div class="img-slider">
+        <img-comparison-slider class="slider">
+      <img slot="first" src="b3.jpg" />
+      <img slot="second" src="a3.jpg" />
+    </img-comparison-slider>
+    </div>
+   </div>
+</div>
+    
+</div>
 
 <!--Why Us? Section-->
 
@@ -212,7 +242,8 @@
 
 </section>
 
-<script src="practice.js" type="module" defer></script>
+<script src="practice.js"></script>
+
 
 </body>
 </html> 
