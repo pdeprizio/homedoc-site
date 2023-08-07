@@ -44,7 +44,9 @@
   .menu {
     display: flex;
     list-style: none;
-    z-index: 1;
+    z-index: 100;
+    background-color: white;
+    
   }
   
   .menu li {
@@ -86,13 +88,15 @@
   @media screen and (max-width: 768px) {
     
     .menu {
+      padding-bottom: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #ffffff02;
+      background-color: #ffffff0c;
       position: absolute;
       top: 60px;
       left: 0;
+    
       width: 100%;
       max-height: 0; 
       overflow: hidden; 
@@ -101,11 +105,12 @@
     }
   
     .menu.show {
-      max-height: 300px; 
+      max-height: 400px; 
     }
   
     .menu li {
       margin: 10px 0;
+      font-size: 11px;
     }
   
     .hamburger {
@@ -215,11 +220,33 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
-.services-col:hover{
-    box-shadow: 0 0 20px 0px rgba(234, 17, 17, 0.422);
-}
 
 
+
+#water:hover {
+    box-shadow: 0 0 20px 0px rgb(9, 9, 160) /* Change to the desired hover color for water service */
+  }
+  
+  #fire:hover {
+    box-shadow: 0 0 20px 0px rgba(215, 0, 0, 0.8); /* Change to the desired hover color for fire service */
+  }
+  
+  #smoke:hover {
+    box-shadow: 0 0 20px 0px rgba(92, 92, 92, 0.8); /* Change to the desired hover color for smoke service */
+  }
+  
+  #sewage:hover {
+    box-shadow: 0 0 20px 0px rgba(106, 53, 0, 0.8); /* Change to the desired hover color for sewage service */
+  }
+  
+  #mold:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 133, 20, 0.8); /* Change to the desired hover color for mold service */
+  }
+  
+  #insurance:hover {
+    box-shadow: 0 0 20px 0px rgba(139, 117, 4, 0.8); /* Change to the desired hover color for insurance service */
+  }
+  
 
 @media(max-width: 700px){
     .services{
@@ -296,15 +323,17 @@ img-comparison-slider {
 
   @media (max-width: 768px) {
     .bna{
-        height: 250vh;
+        height: 200vh;
         margin-top: 10px;
-        margin-bottom: 10px;
+        
     }
     .bna-content {
       padding: 30px; /* Reduce the padding for better use of space on mobile view */
     }
     .bna h1{
         margin-top: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
     }
     .sliders-container {
       display: block; /* Display sliders vertically on mobile view */
@@ -334,7 +363,7 @@ img-comparison-slider {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 .whyus-col{
@@ -493,6 +522,8 @@ line-height: 3rem;
 }
  
 @media (max-width: 768px) {
-
+   .footer-bottom{
+     font-size: 9px;
+   }
 }
  
