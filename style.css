@@ -105,7 +105,8 @@
     }
   
     .menu.show {
-      max-height: 400px; 
+      max-height: 100vh; 
+      background-color: white;
     }
   
     .menu li {
