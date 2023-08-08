@@ -10,7 +10,7 @@
 .scroll-tracker{
     height: 0.5rem;
     inset: 0 0 auto;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #0033eb;
     position: fixed; 
     z-index: 900;
